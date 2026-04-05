@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad150acbdcdc4784dae5883190a3209e, type: 3}
+  m_Name: Player1
+  m_EditorClassIdentifier: 
+  cName: Player1
+  LP: {fileID: 11400000, guid: 611c126a50cce3c43b9f4495871ee8c0, type: 2}
+  MP: {fileID: 11400000, guid: 196c1e827cb65db4bb7844746e7b040e, type: 2}
+  HP: {fileID: 11400000, guid: ddc46535533e7af48b1aeec035a7923f, type: 2}
+  LK: {fileID: 11400000, guid: 611c126a50cce3c43b9f4495871ee8c0, type: 2}
+  MK: {fileID: 11400000, guid: 196c1e827cb65db4bb7844746e7b040e, type: 2}
+  HK: {fileID: 11400000, guid: ddc46535533e7af48b1aeec035a7923f, type: 2}
+  CLP: {fileID: 11400000, guid: a3ed9c7c8108adf48a62b79d01c4a64e, type: 2}
+  CMP: {fileID: 11400000, guid: a3ed9c7c8108adf48a62b79d01c4a64e, type: 2}
+  CHP: {fileID: 11400000, guid: a3ed9c7c8108adf48a62b79d01c4a64e, type: 2}
+  CLK: {fileID: 11400000, guid: d86c3b393727036468fc3c5ac184a02c, type: 2}
+  CMK: {fileID: 11400000, guid: d86c3b393727036468fc3c5ac184a02c, type: 2}
+  CHK: {fileID: 11400000, guid: d86c3b393727036468fc3c5ac184a02c, type: 2}
+  JLP: {fileID: 11400000, guid: 99b4a337f7476a941a3c08ae4dbd74d8, type: 2}
+  JMP: {fileID: 11400000, guid: 99b4a337f7476a941a3c08ae4dbd74d8, type: 2}
+  JHP: {fileID: 11400000, guid: 99b4a337f7476a941a3c08ae4dbd74d8, type: 2}
+  JLK: {fileID: 11400000, guid: c98d0388da67c404bbcc829e510a2cc4, type: 2}
+  JMK: {fileID: 11400000, guid: c98d0388da67c404bbcc829e510a2cc4, type: 2}
+  JHK: {fileID: 11400000, guid: c98d0388da67c404bbcc829e510a2cc4, type: 2}
+  specialMove: []

@@ -1,0 +1,277 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a30995404b3fe4087e7c0388e83c78, type: 3}
+  m_Name: HighPunch
+  m_EditorClassIdentifier: 
+  attribute: 0
+  totalFrame: 33
+  attackStart: 10
+  attackDuration: 5
+  attackRecovery: 18
+  landingRecovery: 0
+  hitStop: 0
+  damege: 100
+  shieldDamage: 0.5
+  eHitRecovery: 22
+  eGuardRecovery: 16
+  hitBack: {x: 3, y: 0}
+  guardBack: {x: 2, y: 0}
+  spriteAll:
+  - {fileID: 3683976231899334233, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 3683976231899334233, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 3683976231899334233, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 4359378897059228576, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 4359378897059228576, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 4359378897059228576, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -3894247369197958698, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -3894247369197958698, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -3894247369197958698, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -685056614791367279, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -685056614791367279, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 6042299410432123063, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 6042299410432123063, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 6042299410432123063, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 6042299410432123063, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 6042299410432123063, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 4359378897059228576, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 4359378897059228576, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 4359378897059228576, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 3683976231899334233, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 3683976231899334233, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 3683976231899334233, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -4693932192084691647, guid: 2831686cff32ca94fab07ccf9815e0a0, type: 3}
+  - {fileID: -4693932192084691647, guid: 2831686cff32ca94fab07ccf9815e0a0, type: 3}
+  - {fileID: -4693932192084691647, guid: 2831686cff32ca94fab07ccf9815e0a0, type: 3}
+  - {fileID: -4693932192084691647, guid: 2831686cff32ca94fab07ccf9815e0a0, type: 3}
+  startUpSprite:
+  - {fileID: 3683976231899334233, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 3683976231899334233, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 3683976231899334233, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 4359378897059228576, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 4359378897059228576, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 4359378897059228576, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  activeAttackSprite:
+  - {fileID: -3894247369197958698, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -3894247369197958698, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -3894247369197958698, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -685056614791367279, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -685056614791367279, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  recoverySprite:
+  - {fileID: 6042299410432123063, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 6042299410432123063, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 6042299410432123063, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 6042299410432123063, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 6042299410432123063, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -305314633251344550, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 4359378897059228576, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 4359378897059228576, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 4359378897059228576, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 3683976231899334233, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 3683976231899334233, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: 3683976231899334233, guid: e37ec5854e2ca664ab06f6f452fb704b, type: 3}
+  - {fileID: -4693932192084691647, guid: 2831686cff32ca94fab07ccf9815e0a0, type: 3}
+  - {fileID: -4693932192084691647, guid: 2831686cff32ca94fab07ccf9815e0a0, type: 3}
+  - {fileID: -4693932192084691647, guid: 2831686cff32ca94fab07ccf9815e0a0, type: 3}
+  - {fileID: -4693932192084691647, guid: 2831686cff32ca94fab07ccf9815e0a0, type: 3}
+  startOffset: {x: -0.1, y: 0}
+  startHurtSize: {x: 1, y: 2.7}
+  frameBoxes:
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.4, y: 0}
+      size: {x: 1.15, y: 2.7}
+    - boxType: 0
+      offset: {x: 0.8, y: 0.6}
+      size: {x: 1.8, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.4, y: 0}
+      size: {x: 1.15, y: 2.7}
+    - boxType: 0
+      offset: {x: 0.8, y: 0.6}
+      size: {x: 1.8, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.4, y: 0}
+      size: {x: 1.15, y: 2.7}
+    - boxType: 0
+      offset: {x: 0.8, y: 0.6}
+      size: {x: 1.8, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.2, y: 0}
+      size: {x: 1.15, y: 2.7}
+    - boxType: 0
+      offset: {x: 0.7, y: 0.6}
+      size: {x: 1.8, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.2, y: 0}
+      size: {x: 1.15, y: 2.7}
+    - boxType: 0
+      offset: {x: 0.7, y: 0.6}
+      size: {x: 1.8, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0.5}
+      size: {x: 1, y: 1.5}
+    - boxType: 1
+      offset: {x: -0.6, y: -0.6}
+      size: {x: 1, y: 1.5}
+    - boxType: 1
+      offset: {x: 0.9, y: 0.6}
+      size: {x: 1, y: 0.8}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0.5}
+      size: {x: 1, y: 1.5}
+    - boxType: 1
+      offset: {x: 0.9, y: 0.6}
+      size: {x: 1, y: 0.8}
+    - boxType: 1
+      offset: {x: -0.6, y: -0.6}
+      size: {x: 1, y: 1.5}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0.5}
+      size: {x: 1, y: 1.5}
+    - boxType: 1
+      offset: {x: 0.9, y: 0.6}
+      size: {x: 1, y: 0.8}
+    - boxType: 1
+      offset: {x: -0.6, y: -0.6}
+      size: {x: 1, y: 1.5}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0.5}
+      size: {x: 1, y: 1.5}
+    - boxType: 1
+      offset: {x: 0.9, y: 0.6}
+      size: {x: 1, y: 0.8}
+    - boxType: 1
+      offset: {x: -0.6, y: -0.6}
+      size: {x: 1, y: 1.5}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0.5}
+      size: {x: 1, y: 1.5}
+    - boxType: 1
+      offset: {x: 0.9, y: 0.6}
+      size: {x: 1, y: 0.8}
+    - boxType: 1
+      offset: {x: -0.6, y: -0.6}
+      size: {x: 1, y: 1.5}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1.15, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1, y: 2.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.1, y: 0}
+      size: {x: 1, y: 2.7}

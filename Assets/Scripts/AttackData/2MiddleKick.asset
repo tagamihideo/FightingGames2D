@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a30995404b3fe4087e7c0388e83c78, type: 3}
+  m_Name: 2MiddleKick
+  m_EditorClassIdentifier: 
+  attribute: 2
+  totalFrame: 29
+  attackStart: 7
+  attackDuration: 3
+  attackRecovery: 19
+  landingRecovery: 0
+  hitStop: 0
+  damege: 30
+  shieldDamage: 0.5
+  eHitRecovery: 0
+  eGuardRecovery: 0
+  hitBack: {x: 1, y: 0}
+  guardBack: {x: 1, y: 0}
+  spriteAll:
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 7645413732371189802, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3631015116279875996, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 4833185423344132913, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 4833185423344132913, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 4833185423344132913, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 4833185423344132913, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 4833185423344132913, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 4833185423344132913, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 6538706784403912789, guid: c5aeaff10c3c27b4ebca89103aef5ff9, type: 3}
+  - {fileID: 6538706784403912789, guid: c5aeaff10c3c27b4ebca89103aef5ff9, type: 3}
+  - {fileID: 6538706784403912789, guid: c5aeaff10c3c27b4ebca89103aef5ff9, type: 3}
+  - {fileID: 6538706784403912789, guid: c5aeaff10c3c27b4ebca89103aef5ff9, type: 3}
+  startUpSprite:
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  activeAttackSprite:
+  - {fileID: 7645413732371189802, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3631015116279875996, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 4833185423344132913, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  recoverySprite:
+  - {fileID: 4833185423344132913, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 4833185423344132913, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 4833185423344132913, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 4833185423344132913, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 4833185423344132913, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 1887743734133494256, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: -3233467790085644854, guid: 80daf020dd7511646b5eb9e100406a9b, type: 3}
+  - {fileID: 6538706784403912789, guid: c5aeaff10c3c27b4ebca89103aef5ff9, type: 3}
+  - {fileID: 6538706784403912789, guid: c5aeaff10c3c27b4ebca89103aef5ff9, type: 3}
+  - {fileID: 6538706784403912789, guid: c5aeaff10c3c27b4ebca89103aef5ff9, type: 3}
+  - {fileID: 6538706784403912789, guid: c5aeaff10c3c27b4ebca89103aef5ff9, type: 3}
+  startOffset: {x: 0, y: 0}
+  startHurtSize: {x: 2, y: 1.5}
+  frameBoxes:
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.3, y: 0.2}
+      size: {x: 1, y: 1.7}
+    - boxType: 1
+      offset: {x: 0.3, y: 0}
+      size: {x: 1, y: 1.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.3, y: 0.2}
+      size: {x: 1, y: 1.7}
+    - boxType: 1
+      offset: {x: 0.4, y: -0.1}
+      size: {x: 1, y: 1}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.3, y: 0.2}
+      size: {x: 1, y: 1.7}
+    - boxType: 1
+      offset: {x: 0.4, y: -0.1}
+      size: {x: 1, y: 1}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 2, y: 1.5}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 2, y: 1.5}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 2, y: 1.5}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 2, y: 1.5}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.5, y: 0}
+      size: {x: 1.5, y: 1.5}
+    - boxType: 0
+      offset: {x: 0.8, y: -0.5}
+      size: {x: 1.5, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.5, y: 0}
+      size: {x: 1.5, y: 1.5}
+    - boxType: 0
+      offset: {x: 0.8, y: -0.5}
+      size: {x: 1.5, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.5, y: 0}
+      size: {x: 1.5, y: 1.5}
+    - boxType: 0
+      offset: {x: 0.9, y: -0.5}
+      size: {x: 1.5, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.5, y: 0}
+      size: {x: 1.5, y: 1.5}
+    - boxType: 1
+      offset: {x: 0.9, y: -0.5}
+      size: {x: 1.5, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.5, y: 0}
+      size: {x: 1.5, y: 1.5}
+    - boxType: 1
+      offset: {x: 0.9, y: -0.5}
+      size: {x: 1.5, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.5, y: 0}
+      size: {x: 1.5, y: 1.5}
+    - boxType: 1
+      offset: {x: 0.9, y: -0.5}
+      size: {x: 1.5, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.5, y: 0}
+      size: {x: 1.5, y: 1.5}
+    - boxType: 1
+      offset: {x: 0.9, y: -0.5}
+      size: {x: 1.5, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.5, y: 0}
+      size: {x: 1.5, y: 1.5}
+    - boxType: 1
+      offset: {x: 0.9, y: -0.5}
+      size: {x: 1.5, y: 0.6}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 2, y: 1.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 2, y: 1.7}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 2, y: 1.5}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 2, y: 1.5}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 2, y: 1.5}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.3, y: 0.2}
+      size: {x: 1, y: 1.7}
+    - boxType: 1
+      offset: {x: 0.4, y: -0.1}
+      size: {x: 1, y: 1}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.3, y: 0.2}
+      size: {x: 1, y: 1.7}
+    - boxType: 1
+      offset: {x: 0.4, y: -0.1}
+      size: {x: 1, y: 1}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.3, y: 0.2}
+      size: {x: 1, y: 1.7}
+    - boxType: 1
+      offset: {x: 0.4, y: -0.1}
+      size: {x: 1, y: 1}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.3, y: 0.2}
+      size: {x: 1, y: 1.7}
+    - boxType: 1
+      offset: {x: 0.4, y: -0.1}
+      size: {x: 1, y: 1}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.3, y: 0.2}
+      size: {x: 1, y: 1.7}
+    - boxType: 1
+      offset: {x: 0.4, y: -0.1}
+      size: {x: 1, y: 1}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.5, y: 2}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.5, y: 2}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.5, y: 2}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.5, y: 2}

@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a30995404b3fe4087e7c0388e83c78, type: 3}
+  m_Name: JumpLightPunch
+  m_EditorClassIdentifier: 
+  attribute: 1
+  totalFrame: 15
+  attackStart: 4
+  attackDuration: 2
+  attackRecovery: 9
+  landingRecovery: 3
+  hitStop: 0
+  damege: 10
+  shieldDamage: 5
+  eHitRecovery: 0
+  eGuardRecovery: 0
+  hitBack: {x: 1, y: 0}
+  guardBack: {x: 1, y: 0}
+  spriteAll:
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: -6069281996172224908, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: -6069281996172224908, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 3328776770096845781, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 3328776770096845781, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 3328776770096845781, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 3328776770096845781, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  startUpSprite:
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  activeAttackSprite:
+  - {fileID: -6069281996172224908, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: -6069281996172224908, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  recoverySprite:
+  - {fileID: 3328776770096845781, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 3328776770096845781, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 3328776770096845781, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 3328776770096845781, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  - {fileID: 8324713789206391971, guid: 3e7c4dc2c7a48164c926677233acf679, type: 3}
+  startOffset: {x: 0, y: 0}
+  startHurtSize: {x: 1, y: 2.3}
+  frameBoxes:
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1, y: 2.3}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1, y: 2.3}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1, y: 2.3}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1, y: 2.3}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.3, y: 0}
+      size: {x: 1, y: 2.3}
+    - boxType: 0
+      offset: {x: 0.5, y: 0}
+      size: {x: 1.3, y: 1}
+  - boxes:
+    - boxType: 1
+      offset: {x: -0.3, y: 0}
+      size: {x: 1, y: 2.3}
+    - boxType: 0
+      offset: {x: 0.5, y: 0}
+      size: {x: 1.3, y: 1}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.7, y: 2.3}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.7, y: 2.3}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.7, y: 2.3}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1.7, y: 2.3}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1, y: 2.3}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1, y: 2.3}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1, y: 2.3}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1, y: 2.3}
+  - boxes:
+    - boxType: 1
+      offset: {x: 0, y: 0}
+      size: {x: 1, y: 2.3}
