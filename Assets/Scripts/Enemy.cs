@@ -17,8 +17,6 @@ public class Enemy : CharaBase
         base.Awake();
         panel.SetActive(false);
         player = GameObject.Find("Player").GetComponent<Player>();
-        StartCoroutine(AIMove());
-        StartCoroutine(AI());
 
         if(GameModeManager.instance != null)
         {
@@ -31,6 +29,17 @@ public class Enemy : CharaBase
                 nowAciton = actions[1];
             }
         }
+        else
+        {
+            nowAciton = actions[0];
+        }
+    }
+
+    protected override void Start()
+    {
+        base.Start();
+        StartCoroutine(AIMove());
+        StartCoroutine(AI());
     }
 
     void Update()
@@ -128,6 +137,7 @@ public class Enemy : CharaBase
             }
             else
             {
+                moveInput = Vector2.zero;
                 yield return null;
             }
 
@@ -138,7 +148,7 @@ public class Enemy : CharaBase
     {
         while (true)
         {
-            //Debug.Log(nowAciton);
+            // Debug.Log(nowAciton);
             switch (nowAciton)
             {
                 case "AI":
@@ -154,6 +164,10 @@ public class Enemy : CharaBase
                     if (groundFlg && !jumpFlg)
                     {
                         moveInput = Vector2.up;
+                    }
+                    else
+                    {
+                        moveInput = Vector2.zero;
                     }
                     shieldFlg = false;
                     aiFlg = false;

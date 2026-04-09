@@ -13,14 +13,23 @@ public class CharacterRoleSetter : MonoBehaviour
 
             if (useEnemy)
             {
+                //Destroy(GetComponent<Player>());
                 playerScript.enabled = false;
                 enemyScript.enabled = true;
             }
             else
             {
+                // Destroy(GetComponent<Enemy>());
                 playerScript.enabled = true;
                 enemyScript.enabled = false;
             }
         }
+        else
+        {
+            //Destroy(GetComponent<Player>());
+            playerScript.enabled = false;
+            enemyScript.enabled = true;
+        }
     }
+    
 }

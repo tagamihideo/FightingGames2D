@@ -12,8 +12,10 @@ public class Player : CharaBase
         input = GetComponent<PlayerInput>();
     }
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
+
         // UnityEventŒo—R‚ÅŽó‚¯Žæ‚ê‚é‚æ‚¤‚É.
         input.notificationBehavior = PlayerNotifications.InvokeUnityEvents;
 
@@ -98,8 +100,6 @@ public class Player : CharaBase
 
     void Attack(InputAction.CallbackContext context)
     {
-        if (playerIndex == 1) return;
-
         string acitonName = context.action.name;
         AttackData data = null;
 

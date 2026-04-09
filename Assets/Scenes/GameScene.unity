@@ -1662,12 +1662,11 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 8
-  checkDistance: 1.3
+  checkDistance: 1.5
   currentAttack: {fileID: 0}
   shield: {fileID: 929397804}
   chipDamage: 0.01
   reviveShieldScale: 2
-  inputLogText: {fileID: 2056545732}
   attackDataList: {fileID: 11400000, guid: 085b1396b94b8fd4d8dd80ca5ec20ac0, type: 2}
   HurtBox:
   - {fileID: 1283578998}
@@ -5203,6 +5202,9 @@ MonoBehaviour:
   player:
   - {fileID: 551070227}
   - {fileID: 1726590180}
+  inputLogText:
+  - {fileID: 2056545732}
+  - {fileID: 448889127}
   winText: {fileID: 792403768}
   canvasButton: {fileID: 668486149}
 --- !u!4 &1545476249
@@ -5773,7 +5775,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726590180}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf6f5a9ccd76c3d4f8caec983bd404f3, type: 3}
   m_Name: 
@@ -5792,12 +5794,11 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
-  checkDistance: 1.3
+  checkDistance: 1.5
   currentAttack: {fileID: 0}
   shield: {fileID: 1283529949}
   chipDamage: 0.01
   reviveShieldScale: 2
-  inputLogText: {fileID: 448889127}
   attackDataList: {fileID: 11400000, guid: 085b1396b94b8fd4d8dd80ca5ec20ac0, type: 2}
   HurtBox:
   - {fileID: 1634889488}
@@ -5828,8 +5829,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfef79e5aa91a39459f46d2ce0a3af3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 100
-  nowHp: 100
+  maxHp: 1000
+  nowHp: 1000
   frontSpeed: 15
   backSpeed: 10
   jumpForce: 14
@@ -5841,13 +5842,12 @@ MonoBehaviour:
     m_Bits: 256
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 8
-  checkDistance: 1.3
+    m_Bits: 64
+  checkDistance: 1.5
   currentAttack: {fileID: 0}
   shield: {fileID: 1283529949}
   chipDamage: 0.01
   reviveShieldScale: 2
-  inputLogText: {fileID: 448889127}
   attackDataList: {fileID: 11400000, guid: 085b1396b94b8fd4d8dd80ca5ec20ac0, type: 2}
   HurtBox:
   - {fileID: 1634889488}
@@ -5863,7 +5863,7 @@ MonoBehaviour:
   - {fileID: 5965463}
   crouchOffset: {x: 0.1, y: 0}
   crouchSize: {x: 1, y: 2}
-  playerTag: Player
+  playerTag: Enemy
   enemy: {fileID: 0}
   panel: {fileID: 868530485}
   actions:
@@ -5880,7 +5880,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726590180}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: deb87d4cc527ba14d84c161a39b66b7c, type: 3}
   m_Name: 
@@ -6269,7 +6269,7 @@ GameObject:
   - component: {fileID: 2056545733}
   - component: {fileID: 2056545732}
   m_Layer: 5
-  m_Name: MyLogText
+  m_Name: PlayerLogText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

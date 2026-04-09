@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
@@ -71,7 +72,6 @@ public class CharaBase : MonoBehaviour
     #region 入力
     [Header("入力")]
     protected Vector2 moveInput;                        // 入力した方向を取得する変数.
-    [SerializeField] Text inputLogText;                 // Log用のText.
     private List<string> inputLog = new List<string>(); // 入力を入れるためのリスト.
     protected string inputAction;                       // 攻撃やシールドを行ったときに使う変数.
     protected string inputOld;                          // 一つ前の入力とチェックするための変数.
@@ -94,7 +94,7 @@ public class CharaBase : MonoBehaviour
     Coroutine recoveryCol;
 
 
-#endregion
+    #endregion
 
     #region Unityイベント関数
     protected virtual void Awake()
@@ -102,12 +102,14 @@ public class CharaBase : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sp = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-        nowHp = maxHp;
+    }
+
+    protected virtual void Start()
+    {
         animator.SetFloat("Hp", maxHp);
         StartCoroutine(Shield());
-        enemy = (playerTag == "Player") 
-            ? GameObject.Find("Enemy").GetComponent<CharaBase>() 
+        enemy = (playerTag == "Player")
+            ? GameObject.Find("Enemy").GetComponent<CharaBase>()
             : GameObject.Find("Player").GetComponent<CharaBase>();
 
         standHurtOffset = HurtBox[0].offset;
@@ -149,14 +151,15 @@ public class CharaBase : MonoBehaviour
     // GameManagerに行動を送るためのTick.
     public void Tick()
     {
-        if(canMoveFlg)
+        CheckGround();
+
+        if (canMoveFlg)
         {
             Move();
             Jump();
             DirectionChange();
-            AddLog();
         }
-        CheckGround();
+        AddLog();
         Animation();
     }
 
@@ -313,6 +316,7 @@ public class CharaBase : MonoBehaviour
     void DirectionChange()
     {
         if (jumpFlg) return;
+        if (enemy == null) return;
 
         float x = transform.position.x - enemy.transform.position.x;
 
@@ -671,13 +675,28 @@ public class CharaBase : MonoBehaviour
             inputCnt = 1;
             inputLog.Add($"{inputCnt} {log}");
         }
-
+       
         // 最新5件だけ表示.
         int startIndex = Mathf.Max(0, inputLog.Count - 5);
         string displayText = string.Join("\n", inputLog.GetRange(startIndex, inputLog.Count - startIndex));
-        inputLogText.text = displayText;
 
         inputOld = log;
+
+        int index = -1;
+
+        if (playerTag == "Player")
+        {
+            index = 0;
+        }
+        else if (playerTag == "Enemy")
+        {
+            index = 1;
+        }
+
+        if (index > -1)
+        {
+            GameManager.instance.UpdateLog(displayText ,index);
+        }
     }
     #endregion
 
